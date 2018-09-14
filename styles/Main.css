@@ -1,1 +1,122 @@
-/*Add your CSS styling here*/
+.box {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.w-fill {
+    width: 100%;
+}
+
+.h-fill {
+    height: 100%;
+}
+
+.page-wrapper {
+    width: 100%;
+    padding-top: 60px;
+}
+
+.frame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+.row-apart {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.col-center {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.col {
+    display: flex;
+    flex-direction: column
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: inherit;
+    margin: 10px 0;
+}
+
+h1, h2 {
+    color: #212121;
+}
+
+h3, h4, h5 {
+    color: #424242;
+}
+
+
+.shadow {
+    -webkit-box-shadow: 0 1px 7px rgba(0,0,0,.05);;
+    box-shadow: 0 1px 7px rgba(0,0,0,.05);
+}
+
+.background-hover {
+    -webkit-transition: background .35s ease;
+    transition: background .35s ease;
+}
+
+.color-hover {
+    -webkit-transition: color .35s ease;
+    transition: color .35s ease;
+}
+
+.content-section {
+    background: #fff;
+    padding: 20px;
+    width: 400px;
+    max-width: 100%;
+    position: relative;
+}
+
+a {
+    font: inherit;
+    color: inherit;
+    text-decoration: none;
+}
+
+.faint-text {
+    color: #bdbdbd;
+}
+
+.weak-text {
+    color: #757575;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.ml-auto {
+    margin-left: auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
