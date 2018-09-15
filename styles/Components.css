@@ -1,0 +1,23 @@
+.icon-link {
+    height: 20px;
+    width: 20px;
+}
+
+#avatar {
+    height: 250px;
+    min-width: 250px;
+}
+
+#links {
+    height: 250px;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.card-image {
+    height: 80px;
+}
+
+#sh-logo {
+    border-radius: 6px;
+}

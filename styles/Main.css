@@ -49,14 +49,6 @@ h1, h2, h3, h4, h5 {
     margin: 10px 0;
 }
 
-h1, h2 {
-    color: #212121;
-}
-
-h3, h4, h5 {
-    color: #424242;
-}
-
 
 .shadow {
     -webkit-box-shadow: 0 1px 7px rgba(0,0,0,.05);;
@@ -111,6 +103,14 @@ a {
     margin-left: auto;
 }
 
+.mr-auto {
+    margin-right: auto;
+}
+
+.mr-10 {
+    margin-right: 10px;
+}
+
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
@@ -119,4 +119,8 @@ a {
 @-webkit-keyframes spin {
     0% { -webkit-transform: rotate(0deg); }
     100% { -webkit-transform: rotate(360deg); }
+}
+
+li {
+    margin-left: 20px;
 }
