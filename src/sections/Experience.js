@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'react-emotion';
 
-import {Column, FaintText, Text, ColumnCenter, Section, SectionHeader, RowWrap} from "../elements";
+import {Column, Title, Subtitle, FaintText, Text, ColumnCenter, Section, SectionHeader, RowWrap} from "../elements";
 class Experience extends React.Component {
     constructor() {
         super();
@@ -96,26 +96,15 @@ const Wrapper = styled(RowWrap)`
     margin-bottom: 20px;
 `;
 
-const Company = styled('h2')`
-    color: #212121;
-    margin-top: 20px;
-    max-width: 170px;
-`;
-
-const Position = styled('h3')`
-    color: #424242;
-    margin-top: 5px;
-`;
-
 const Card = ({image, children, id, company, position, dates}) => {
     return (
         <Wrapper>
             <div>
                 <img className="card-image" id={id} src={image}/>
-                <Company>{company}</Company>
+                <Title>{company}</Title>
             </div>
             <div className="ml-auto" style={{width: '500px'}}>
-                <Position>{position}</Position>
+                <Subtitle>{position}</Subtitle>
                 <FaintText>{dates}</FaintText>
                 {children}
             </div>

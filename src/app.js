@@ -6,6 +6,8 @@ import Navbar from "./components/Navbar";
 import Landing from "./sections/Landing";
 import Bio from "./sections/Bio";
 import Experience from "./sections/Experience";
+import Skills from "./sections/Skills";
+import Design from "./sections/Design";
 
 class App extends React.Component {
     constructor() {
@@ -18,7 +20,8 @@ class App extends React.Component {
                 <Navbar/>
                 <Landing/>
                 <Bio />
-                <Experience/>
+                {/*<Experience/>*/}
+                <Design />
             </ColumnCenter>
         )
     }

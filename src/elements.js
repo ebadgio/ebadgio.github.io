@@ -41,6 +41,10 @@ export const SectionHeader = styled('h2')`
     align-self: center;
 `;
 
+export const SubHeader = styled('h3')`
+    color: #bdbdbd;
+`;
+
 export const Divider = styled('div')`
     width: 100%;
     border-top: 1px solid #e9e9e9;
@@ -67,4 +71,15 @@ export const FaintText = styled('p')`
 export const Note = styled('span')`
     font-size: 12px;
     color: #bdbdbd;
+`;
+
+export const Title = styled('h2')`
+    color: #212121;
+    margin-top: 20px;
+    max-width: 170px;
+`;
+
+export const Subtitle = styled('h3')`
+    color: #424242;
+    margin-top: 5px;
 `;

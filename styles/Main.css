@@ -111,6 +111,18 @@ a {
     margin-right: 10px;
 }
 
+.m-20 {
+    margin: 20px;
+}
+
+.p-10 {
+    padding: 10px;
+}
+
+.box {
+    box-sizing: border-box;
+}
+
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
