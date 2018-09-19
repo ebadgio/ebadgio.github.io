@@ -19,18 +19,24 @@ class Design extends React.Component {
                     WEB
                 </SubHeader>
                 <RowCenter>
+                    <Card title={'MIRANDA MORRIS ART'}
+                          snapshot={'/ebadgio.github.io/assets/mm-art.png'}
+                          description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo\n' +
+                          '                    d tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venia'}
+                          url={'https://www.mirandamorrisart.com'}
+                          basicUrl={'MIRANDAMORRISART.COM'}/>
                     <Card title={'STACK HACK TUTORING'}
                           snapshot={'/ebadgio.github.io/assets/sh-landing.png'}
                           description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo\n' +
                           '                    d tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venia'}
                           url={'https://www.stackhacktutoring.com'}
                           basicUrl={'STACKHACKTUTORING.COM'}/>
-                    <Card title={'MIRANDA MORRIS ART'}
-                          snapshot={'/ebadgio.github.io/assets/mm-art.png'}
+                    <Card title={'WALNUT'}
+                          snapshot={'/ebadgio.github.io/assets/walnut.png'}
                           description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo\n' +
                           '                    d tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venia'}
-                          url={'https://www.stackhacktutoring.com'}
-                          basicUrl={'MIRANDAMORRISART.COM'}/>
+                          url={'https://www.walnutnetwork.com'}
+                          basicUrl={'WALNUTNETWORK.COM'}/>
                 </RowCenter>
                 <SubHeader>
                     LOGO/GRAPHIC
@@ -77,7 +83,7 @@ const Card = ({snapshot, title, description, url, basicUrl}) => {
                     <Text>
                         {description}
                     </Text>
-                    <div className="mr-10 ml-auto">
+                    <div className="mr-10 ml-auto" style={{width: 'fit-content'}}>
                         <Note>{basicUrl}</Note>
                     </div>
                 </div>

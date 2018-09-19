@@ -871,7 +871,7 @@ Object.defineProperty(exports, "__esModule", {
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _templateObject = _taggedTemplateLiteral(['\n    justify-content: center;\n'], ['\n    justify-content: center;\n']),
-    _templateObject2 = _taggedTemplateLiteral(['\n    width: 400px;\n    max-width: 100%;\n    overflow: hidden;\n    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 10px 3px;\n    max-width: calc(100% - 20px);\n'], ['\n    width: 400px;\n    max-width: 100%;\n    overflow: hidden;\n    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 10px 3px;\n    max-width: calc(100% - 20px);\n']),
+    _templateObject2 = _taggedTemplateLiteral(['\n    width: 400px;\n    max-width: 100%;\n    overflow: hidden;\n    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 10px 3px;\n    max-width: calc(100% - 20px);\n    border-radius: 4px;\n'], ['\n    width: 400px;\n    max-width: 100%;\n    overflow: hidden;\n    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 10px 3px;\n    max-width: calc(100% - 20px);\n    border-radius: 4px;\n']),
     _templateObject3 = _taggedTemplateLiteral(['\n    width: 100%;\n    max-height: 200px;\n    overflow: hidden;\n'], ['\n    width: 100%;\n    max-height: 200px;\n    overflow: hidden;\n']),
     _templateObject4 = _taggedTemplateLiteral(['\n    width: 100%;\n'], ['\n    width: 100%;\n']),
     _templateObject5 = _taggedTemplateLiteral(['\n    color: #424242;\n    margin-top: 10px;\n    margin-bottom: 0;\n'], ['\n    color: #424242;\n    margin-top: 10px;\n    margin-bottom: 0;\n']);
@@ -926,16 +926,21 @@ var Design = function (_React$Component) {
                 _react2.default.createElement(
                     RowCenter,
                     null,
+                    _react2.default.createElement(Card, { title: 'MIRANDA MORRIS ART',
+                        snapshot: '/ebadgio.github.io/assets/mm-art.png',
+                        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo\n' + '                    d tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venia',
+                        url: 'https://www.mirandamorrisart.com',
+                        basicUrl: 'MIRANDAMORRISART.COM' }),
                     _react2.default.createElement(Card, { title: 'STACK HACK TUTORING',
                         snapshot: '/ebadgio.github.io/assets/sh-landing.png',
                         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo\n' + '                    d tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venia',
                         url: 'https://www.stackhacktutoring.com',
                         basicUrl: 'STACKHACKTUTORING.COM' }),
-                    _react2.default.createElement(Card, { title: 'MIRANDA MORRIS ART',
-                        snapshot: '/ebadgio.github.io/assets/mm-art.png',
+                    _react2.default.createElement(Card, { title: 'WALNUT',
+                        snapshot: '/ebadgio.github.io/assets/walnut.png',
                         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo\n' + '                    d tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venia',
-                        url: 'https://www.stackhacktutoring.com',
-                        basicUrl: 'MIRANDAMORRISART.COM' })
+                        url: 'https://www.walnutnetwork.com',
+                        basicUrl: 'WALNUTNETWORK.COM' })
                 ),
                 _react2.default.createElement(
                     _elements.SubHeader,
@@ -989,9 +994,13 @@ var Card = function Card(_ref) {
                     description
                 ),
                 _react2.default.createElement(
-                    _elements.Note,
-                    { className: 'mr-10 ml-auto' },
-                    basicUrl
+                    'div',
+                    { className: 'mr-10 ml-auto', style: { width: 'fit-content' } },
+                    _react2.default.createElement(
+                        _elements.Note,
+                        null,
+                        basicUrl
+                    )
                 )
             )
         )
