@@ -63,4 +63,13 @@ export const ButtonIcon = styled(Button)`
     }  
 `;
 
+export const ButtonIconSimple = styled(ButtonIcon)`
+    border: none;
+    margin: 0;
+`;
 
+export const ButtonIconLight = styled(ButtonIcon)`
+    &:hover {
+        color: #fff !important;
+    }
+`;

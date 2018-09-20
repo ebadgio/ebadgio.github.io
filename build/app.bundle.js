@@ -63,11 +63,26 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 20);
+/******/ 	return __webpack_require__(__webpack_require__.s = 23);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process) {
+
+if (process.env.NODE_ENV === 'production') {
+  module.exports = __webpack_require__(33);
+} else {
+  module.exports = __webpack_require__(32);
+}
+
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+
+/***/ }),
+/* 1 */
 /***/ (function(module, exports) {
 
 // shim for using process in browser
@@ -257,21 +272,6 @@ process.umask = function() { return 0; };
 
 
 /***/ }),
-/* 1 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(process) {
-
-if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(31);
-} else {
-  module.exports = __webpack_require__(30);
-}
-
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
-
-/***/ }),
 /* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -281,26 +281,28 @@ if (process.env.NODE_ENV === 'production') {
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-exports.Subtitle = exports.Title = exports.Note = exports.FaintText = exports.Text = exports.Frame = exports.Divider = exports.SubHeader = exports.SectionHeader = exports.Section = exports.ColumnCenter = exports.Column = exports.RowApart = exports.RowWrap = exports.Row = exports.RowFit = undefined;
+exports.Link = exports.SubTitle = exports.Title = exports.Note = exports.FaintText = exports.Text = exports.Frame = exports.Divider = exports.SubHeader = exports.SectionHeader = exports.Section = exports.ColumnCenter = exports.Column = exports.RowCenter = exports.RowApart = exports.RowWrap = exports.Row = exports.RowFit = undefined;
 
 var _templateObject = _taggedTemplateLiteral(['\n    display: flex;\n\talign-items: center;\n'], ['\n    display: flex;\n\talign-items: center;\n']),
     _templateObject2 = _taggedTemplateLiteral(['\n\twidth: 100%;\n'], ['\n\twidth: 100%;\n']),
     _templateObject3 = _taggedTemplateLiteral(['\n    flex-wrap: wrap;\n'], ['\n    flex-wrap: wrap;\n']),
     _templateObject4 = _taggedTemplateLiteral(['\n    justify-content: apart;\n'], ['\n    justify-content: apart;\n']),
-    _templateObject5 = _taggedTemplateLiteral(['\n    display: flex;\n    flex-direction: column;\n    width: 100%;\n'], ['\n    display: flex;\n    flex-direction: column;\n    width: 100%;\n']),
-    _templateObject6 = _taggedTemplateLiteral(['\n    align-items: center;\n'], ['\n    align-items: center;\n']),
-    _templateObject7 = _taggedTemplateLiteral(['\n    box-sizing: border-box;\n    padding: 40px;\n    max-width: 1400px;\n    margin-bottom: 40px;\n'], ['\n    box-sizing: border-box;\n    padding: 40px;\n    max-width: 1400px;\n    margin-bottom: 40px;\n']),
-    _templateObject8 = _taggedTemplateLiteral(['\n    color: #757575;\n    margin-bottom: 20px;\n    align-self: center;\n'], ['\n    color: #757575;\n    margin-bottom: 20px;\n    align-self: center;\n']),
-    _templateObject9 = _taggedTemplateLiteral(['\n    color: #bdbdbd;\n'], ['\n    color: #bdbdbd;\n']),
-    _templateObject10 = _taggedTemplateLiteral(['\n    width: 100%;\n    border-top: 1px solid #e9e9e9;\n    margin: 10px 0;\n'], ['\n    width: 100%;\n    border-top: 1px solid #e9e9e9;\n    margin: 10px 0;\n']),
-    _templateObject11 = _taggedTemplateLiteral(['\n    display: flex;\n    justify-content: center;\n    align-items: center;\n'], ['\n    display: flex;\n    justify-content: center;\n    align-items: center;\n']),
-    _templateObject12 = _taggedTemplateLiteral(['\n    font-size: 16px;\n    color: #424242;\n    line-height: 22px;\n'], ['\n    font-size: 16px;\n    color: #424242;\n    line-height: 22px;\n']),
-    _templateObject13 = _taggedTemplateLiteral(['\n    font-size: 16px;\n    color: #757575;\n'], ['\n    font-size: 16px;\n    color: #757575;\n']),
-    _templateObject14 = _taggedTemplateLiteral(['\n    font-size: 12px;\n    color: #bdbdbd;\n'], ['\n    font-size: 12px;\n    color: #bdbdbd;\n']),
-    _templateObject15 = _taggedTemplateLiteral(['\n    color: #212121;\n    margin-top: 20px;\n    max-width: 170px;\n'], ['\n    color: #212121;\n    margin-top: 20px;\n    max-width: 170px;\n']),
-    _templateObject16 = _taggedTemplateLiteral(['\n    color: #424242;\n    margin-top: 5px;\n'], ['\n    color: #424242;\n    margin-top: 5px;\n']);
+    _templateObject5 = _taggedTemplateLiteral(['\n    justify-content: center;\n'], ['\n    justify-content: center;\n']),
+    _templateObject6 = _taggedTemplateLiteral(['\n    display: flex;\n    flex-direction: column;\n    width: 100%;\n'], ['\n    display: flex;\n    flex-direction: column;\n    width: 100%;\n']),
+    _templateObject7 = _taggedTemplateLiteral(['\n    align-items: center;\n'], ['\n    align-items: center;\n']),
+    _templateObject8 = _taggedTemplateLiteral(['\n    box-sizing: border-box;\n    padding: 40px;\n    max-width: 1400px;\n    margin-bottom: 40px;\n    @media (max-width: 420px) {\n        padding: 10px !important;\n    }\n'], ['\n    box-sizing: border-box;\n    padding: 40px;\n    max-width: 1400px;\n    margin-bottom: 40px;\n    @media (max-width: 420px) {\n        padding: 10px !important;\n    }\n']),
+    _templateObject9 = _taggedTemplateLiteral(['\n    color: #757575;\n    margin-bottom: 20px;\n    align-self: center;\n'], ['\n    color: #757575;\n    margin-bottom: 20px;\n    align-self: center;\n']),
+    _templateObject10 = _taggedTemplateLiteral(['\n    color: #bdbdbd;\n'], ['\n    color: #bdbdbd;\n']),
+    _templateObject11 = _taggedTemplateLiteral(['\n    width: 100%;\n    border-top: 1px solid #e9e9e9;\n    margin: 10px 0;\n'], ['\n    width: 100%;\n    border-top: 1px solid #e9e9e9;\n    margin: 10px 0;\n']),
+    _templateObject12 = _taggedTemplateLiteral(['\n    display: flex;\n    justify-content: center;\n    align-items: center;\n'], ['\n    display: flex;\n    justify-content: center;\n    align-items: center;\n']),
+    _templateObject13 = _taggedTemplateLiteral(['\n    font-size: 16px;\n    color: #424242;\n    line-height: 22px;\n'], ['\n    font-size: 16px;\n    color: #424242;\n    line-height: 22px;\n']),
+    _templateObject14 = _taggedTemplateLiteral(['\n    font-size: 16px;\n    color: #757575;\n'], ['\n    font-size: 16px;\n    color: #757575;\n']),
+    _templateObject15 = _taggedTemplateLiteral(['\n    font-size: 12px;\n    color: #bdbdbd;\n'], ['\n    font-size: 12px;\n    color: #bdbdbd;\n']),
+    _templateObject16 = _taggedTemplateLiteral(['\n    color: #212121;\n'], ['\n    color: #212121;\n']),
+    _templateObject17 = _taggedTemplateLiteral(['\n    color: #424242;\n    margin-top: 5px;\n'], ['\n    color: #424242;\n    margin-top: 5px;\n']),
+    _templateObject18 = _taggedTemplateLiteral(['\n    color: #40c4ff;\n    transition: color .25s ease;\n    &:hover {\n        color: #00b0ff;\n    }\n'], ['\n    color: #40c4ff;\n    transition: color .25s ease;\n    &:hover {\n        color: #00b0ff;\n    }\n']);
 
-var _react = __webpack_require__(1);
+var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -320,29 +322,33 @@ var RowWrap = exports.RowWrap = (0, _reactEmotion2.default)(Row)(_templateObject
 
 var RowApart = exports.RowApart = (0, _reactEmotion2.default)(Row)(_templateObject4);
 
-var Column = exports.Column = (0, _reactEmotion2.default)('div')(_templateObject5);
+var RowCenter = exports.RowCenter = (0, _reactEmotion2.default)(RowWrap)(_templateObject5);
 
-var ColumnCenter = exports.ColumnCenter = (0, _reactEmotion2.default)(Column)(_templateObject6);
+var Column = exports.Column = (0, _reactEmotion2.default)('div')(_templateObject6);
 
-var Section = exports.Section = (0, _reactEmotion2.default)(Column)(_templateObject7);
+var ColumnCenter = exports.ColumnCenter = (0, _reactEmotion2.default)(Column)(_templateObject7);
 
-var SectionHeader = exports.SectionHeader = (0, _reactEmotion2.default)('h2')(_templateObject8);
+var Section = exports.Section = (0, _reactEmotion2.default)(Column)(_templateObject8);
 
-var SubHeader = exports.SubHeader = (0, _reactEmotion2.default)('h3')(_templateObject9);
+var SectionHeader = exports.SectionHeader = (0, _reactEmotion2.default)('h1')(_templateObject9);
 
-var Divider = exports.Divider = (0, _reactEmotion2.default)('div')(_templateObject10);
+var SubHeader = exports.SubHeader = (0, _reactEmotion2.default)('h2')(_templateObject10);
 
-var Frame = exports.Frame = (0, _reactEmotion2.default)('div')(_templateObject11);
+var Divider = exports.Divider = (0, _reactEmotion2.default)('div')(_templateObject11);
 
-var Text = exports.Text = (0, _reactEmotion2.default)('p')(_templateObject12);
+var Frame = exports.Frame = (0, _reactEmotion2.default)('div')(_templateObject12);
 
-var FaintText = exports.FaintText = (0, _reactEmotion2.default)('p')(_templateObject13);
+var Text = exports.Text = (0, _reactEmotion2.default)('p')(_templateObject13);
 
-var Note = exports.Note = (0, _reactEmotion2.default)('span')(_templateObject14);
+var FaintText = exports.FaintText = (0, _reactEmotion2.default)('p')(_templateObject14);
 
-var Title = exports.Title = (0, _reactEmotion2.default)('h2')(_templateObject15);
+var Note = exports.Note = (0, _reactEmotion2.default)('span')(_templateObject15);
 
-var Subtitle = exports.Subtitle = (0, _reactEmotion2.default)('h3')(_templateObject16);
+var Title = exports.Title = (0, _reactEmotion2.default)('h2')(_templateObject16);
+
+var SubTitle = exports.SubTitle = (0, _reactEmotion2.default)('h3')(_templateObject17);
+
+var Link = exports.Link = (0, _reactEmotion2.default)('a')(_templateObject18);
 
 /***/ }),
 /* 3 */
@@ -350,9 +356,9 @@ var Subtitle = exports.Subtitle = (0, _reactEmotion2.default)('h3')(_templateObj
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_emotion__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_emotion__ = __webpack_require__(9);
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "flush", function() { return __WEBPACK_IMPORTED_MODULE_1_emotion__["flush"]; });
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "hydrate", function() { return __WEBPACK_IMPORTED_MODULE_1_emotion__["hydrate"]; });
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "cx", function() { return __WEBPACK_IMPORTED_MODULE_1_emotion__["cx"]; });
@@ -363,7 +369,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "css", function() { return __WEBPACK_IMPORTED_MODULE_1_emotion__["css"]; });
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "sheet", function() { return __WEBPACK_IMPORTED_MODULE_1_emotion__["sheet"]; });
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "caches", function() { return __WEBPACK_IMPORTED_MODULE_1_emotion__["caches"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_create_emotion_styled__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_create_emotion_styled__ = __webpack_require__(24);
 
 
 
@@ -476,6 +482,65 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.ButtonIconLight = exports.ButtonIconSimple = exports.ButtonIcon = exports.ButtonPrimary = exports.ButtonOutlinePrimary = exports.Avatar = undefined;
+
+var _templateObject = _taggedTemplateLiteral(['\n    border-radius: 50%;\n    overflow: hidden;\n'], ['\n    border-radius: 50%;\n    overflow: hidden;\n']),
+    _templateObject2 = _taggedTemplateLiteral(['\n    height: 40px;\n\twidth: fit-content;\n\tborder-radius: 6px;\n\tmargin: 10px 0;\n\tcursor: pointer;\n\tpadding: 0 10px;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    -webkit-transition: color .35s ease, background .35s ease;\n\ttransition: color .35s ease, background .35s ease;\n\tfont-size: 16px;\n\tfont-family: sans-serif;\n'], ['\n    height: 40px;\n\twidth: fit-content;\n\tborder-radius: 6px;\n\tmargin: 10px 0;\n\tcursor: pointer;\n\tpadding: 0 10px;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    -webkit-transition: color .35s ease, background .35s ease;\n\ttransition: color .35s ease, background .35s ease;\n\tfont-size: 16px;\n\tfont-family: sans-serif;\n']),
+    _templateObject3 = _taggedTemplateLiteral(['\n    border: 1px solid;\n'], ['\n    border: 1px solid;\n']),
+    _templateObject4 = _taggedTemplateLiteral(['\n    color: #8c9eff;\n    &:hover {\n        color: #5870cb\n    }\n'], ['\n    color: #8c9eff;\n    &:hover {\n        color: #5870cb\n    }\n']),
+    _templateObject5 = _taggedTemplateLiteral(['\n    background: #8c9eff;\n    color: #fff;\n    &:hover {\n        background: #5870cb\n    }\n'], ['\n    background: #8c9eff;\n    color: #fff;\n    &:hover {\n        background: #5870cb\n    }\n']),
+    _templateObject6 = _taggedTemplateLiteral(['\n    border-radius: 50%;\n    box-sizing: border-box;\n    padding: 10px;\n    color: #bdbdbd;\n    border: 1px solid;\n    height: 42px;\n    &:hover {\n        color: #757575;\n    }  \n'], ['\n    border-radius: 50%;\n    box-sizing: border-box;\n    padding: 10px;\n    color: #bdbdbd;\n    border: 1px solid;\n    height: 42px;\n    &:hover {\n        color: #757575;\n    }  \n']),
+    _templateObject7 = _taggedTemplateLiteral(['\n    border: none;\n    margin: 0;\n'], ['\n    border: none;\n    margin: 0;\n']),
+    _templateObject8 = _taggedTemplateLiteral(['\n    &:hover {\n        color: #fff !important;\n    }\n'], ['\n    &:hover {\n        color: #fff !important;\n    }\n']);
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactEmotion = __webpack_require__(3);
+
+var _reactEmotion2 = _interopRequireDefault(_reactEmotion);
+
+var _elements = __webpack_require__(2);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+var Wrapper = (0, _reactEmotion2.default)(_elements.Frame)(_templateObject);
+
+var Avatar = exports.Avatar = function Avatar(props) {
+    return _react2.default.createElement(
+        Wrapper,
+        { id: props.id },
+        _react2.default.createElement('img', { src: props.src, style: { height: '100%' } })
+    );
+};
+
+var Button = (0, _reactEmotion2.default)('div')(_templateObject2);
+
+var ButtonOutline = (0, _reactEmotion2.default)(Button)(_templateObject3);
+
+var ButtonOutlinePrimary = exports.ButtonOutlinePrimary = (0, _reactEmotion2.default)(ButtonOutline)(_templateObject4);
+
+var ButtonPrimary = exports.ButtonPrimary = (0, _reactEmotion2.default)(Button)(_templateObject5);
+
+var ButtonIcon = exports.ButtonIcon = (0, _reactEmotion2.default)(Button)(_templateObject6);
+
+var ButtonIconSimple = exports.ButtonIconSimple = (0, _reactEmotion2.default)(ButtonIcon)(_templateObject7);
+
+var ButtonIconLight = exports.ButtonIconLight = (0, _reactEmotion2.default)(ButtonIcon)(_templateObject8);
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -488,7 +553,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 var printWarning = function() {};
 
 if (process.env.NODE_ENV !== 'production') {
-  var ReactPropTypesSecret = __webpack_require__(6);
+  var ReactPropTypesSecret = __webpack_require__(7);
   var loggedTypeFailures = {};
 
   printWarning = function(text) {
@@ -568,10 +633,10 @@ function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
 
 module.exports = checkPropTypes;
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 6 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -590,7 +655,7 @@ module.exports = ReactPropTypesSecret;
 
 
 /***/ }),
-/* 7 */
+/* 8 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -607,7 +672,7 @@ function memoize(fn) {
 
 
 /***/ }),
-/* 8 */
+/* 9 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -622,7 +687,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "css", function() { return css; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "sheet", function() { return sheet; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "caches", function() { return caches; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_create_emotion__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_create_emotion__ = __webpack_require__(25);
 
 
 var context = typeof global !== 'undefined' ? global : {};
@@ -641,25 +706,25 @@ var _createEmotion = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_create_em
 
 
 
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(38)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(40)))
 
 /***/ }),
-/* 9 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {
 
 if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(35);
+  module.exports = __webpack_require__(37);
 } else {
-  module.exports = __webpack_require__(34);
+  module.exports = __webpack_require__(36);
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 10 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -671,11 +736,11 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _templateObject = _taggedTemplateLiteral(['\n    height: 57px;\n    width: 100%;\n    position: fixed;\n    top:0;\n    z-index: 1;\n    color: #fff;\n'], ['\n    height: 57px;\n    width: 100%;\n    position: fixed;\n    top:0;\n    z-index: 1;\n    color: #fff;\n']),
+var _templateObject = _taggedTemplateLiteral(['\n    height: 57px;\n    width: 100%;\n    position: absolute;\n    top:0;\n    z-index: 1;\n    color: #fff;\n'], ['\n    height: 57px;\n    width: 100%;\n    position: absolute;\n    top:0;\n    z-index: 1;\n    color: #fff;\n']),
     _templateObject2 = _taggedTemplateLiteral(['\n    max-width: 1400px;\n    padding: 0 20px;\n'], ['\n    max-width: 1400px;\n    padding: 0 20px;\n']),
     _templateObject3 = _taggedTemplateLiteral(['\n    color: #fff;\n'], ['\n    color: #fff;\n']);
 
-var _react = __webpack_require__(1);
+var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -739,7 +804,7 @@ var NavTitle = (0, _reactEmotion2.default)('h2')(_templateObject3);
 exports.default = Navbar;
 
 /***/ }),
-/* 11 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -751,13 +816,13 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(1);
+var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
 var _elements = __webpack_require__(2);
 
-var _components = __webpack_require__(21);
+var _components = __webpack_require__(5);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -789,7 +854,7 @@ var Bio = function (_React$Component) {
                 ),
                 _react2.default.createElement(
                     _elements.RowApart,
-                    null,
+                    { id: "bio-info" },
                     _react2.default.createElement(_components.Avatar, { src: "/ebadgio.github.io/assets/eli-2-web.jpg", id: "avatar" }),
                     _react2.default.createElement(
                         _elements.Column,
@@ -805,7 +870,7 @@ var Bio = function (_React$Component) {
                             null,
                             _react2.default.createElement(
                                 "a",
-                                { className: "mr-10" },
+                                { className: "mr-10", href: "https://github.com/ebadgio" },
                                 _react2.default.createElement(
                                     _components.ButtonIcon,
                                     null,
@@ -814,7 +879,7 @@ var Bio = function (_React$Component) {
                             ),
                             _react2.default.createElement(
                                 "a",
-                                { className: "mr-10" },
+                                { className: "mr-10", href: "https://linkedin.com/in/eli-badgio" },
                                 _react2.default.createElement(
                                     _components.ButtonIcon,
                                     null,
@@ -823,7 +888,7 @@ var Bio = function (_React$Component) {
                             ),
                             _react2.default.createElement(
                                 "a",
-                                { className: "mr-10" },
+                                { className: "mr-10", href: "https://facebook.com/eli.badgio" },
                                 _react2.default.createElement(
                                     _components.ButtonIcon,
                                     null,
@@ -832,7 +897,7 @@ var Bio = function (_React$Component) {
                             ),
                             _react2.default.createElement(
                                 "a",
-                                null,
+                                { href: "mailto:eli.badgio@gmail.com" },
                                 _react2.default.createElement(
                                     _components.ButtonIcon,
                                     null,
@@ -842,11 +907,31 @@ var Bio = function (_React$Component) {
                         )
                     )
                 ),
-                _react2.default.createElement("br", null),
                 _react2.default.createElement(
                     _elements.Text,
-                    { style: { maxWidth: '800px' } },
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo d tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venia m, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pa riatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit a nim id est laborum."
+                    { style: { color: '#757575' }, id: "bio-roles" },
+                    "FOUNDER ",
+                    _react2.default.createElement(
+                        _elements.Link,
+                        { href: "https://stackhacktutoring.com",
+                            target: "_blank" },
+                        "@STACK HACK TUTORING"
+                    ),
+                    _react2.default.createElement("br", null),
+                    "SUMMER 2018 SOFTWARE ENGINEERING INTERN ",
+                    _react2.default.createElement(
+                        _elements.Link,
+                        { href: "https://sap.com",
+                            target: "_blank" },
+                        "@SAP"
+                    ),
+                    _react2.default.createElement("br", null),
+                    "FREELANCE WEB DEVELOPER"
+                ),
+                _react2.default.createElement(
+                    _elements.Text,
+                    { style: { maxWidth: '900px' }, id: "bio-blurb" },
+                    "Welcome to my website! Right now I am finishing up my senior year at Rice University, where I am double majoring in Computer Science and Cognitive Science. I am passionate about all things related to design (web, software, ui/ux etc.). In my spare time I like to work on websites, bike, longboard, play ultimate frisbee, and just walk around. Keep scrolling to learn about some of my work! If you are interested in seeing my work experience please check out my resume or linkedin account!"
                 )
             );
         }
@@ -858,7 +943,92 @@ var Bio = function (_React$Component) {
 exports.default = Bio;
 
 /***/ }),
-/* 12 */
+/* 13 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _templateObject = _taggedTemplateLiteral(['\n    background: #424242;\n    margin-bottom: 0;\n    align-items: center;\n'], ['\n    background: #424242;\n    margin-bottom: 0;\n    align-items: center;\n']);
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactEmotion = __webpack_require__(3);
+
+var _reactEmotion2 = _interopRequireDefault(_reactEmotion);
+
+var _elements = __webpack_require__(2);
+
+var _components = __webpack_require__(5);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+var DarkSection = (0, _reactEmotion2.default)(_elements.Section)(_templateObject);
+
+var Bottom = function Bottom() {
+    return _react2.default.createElement(
+        DarkSection,
+        null,
+        _react2.default.createElement(
+            _elements.RowFit,
+            null,
+            _react2.default.createElement(
+                'a',
+                { className: 'mr-10', href: 'https://github.com/ebadgio' },
+                _react2.default.createElement(
+                    _components.ButtonIconLight,
+                    null,
+                    _react2.default.createElement('i', { className: 'icon-link', 'data-feather': 'github' })
+                )
+            ),
+            _react2.default.createElement(
+                'a',
+                { className: 'mr-10', href: 'https://linkedin.com/in/eli-badgio' },
+                _react2.default.createElement(
+                    _components.ButtonIconLight,
+                    null,
+                    _react2.default.createElement('i', { className: 'icon-link', 'data-feather': 'linkedin' })
+                )
+            ),
+            _react2.default.createElement(
+                'a',
+                { className: 'mr-10', href: 'https://facebook.com/eli.badgio' },
+                _react2.default.createElement(
+                    _components.ButtonIconLight,
+                    null,
+                    _react2.default.createElement('i', { className: 'icon-link', 'data-feather': 'facebook' })
+                )
+            ),
+            _react2.default.createElement(
+                'a',
+                { href: 'mailto:eli.badgio@gmail.com' },
+                _react2.default.createElement(
+                    _components.ButtonIconLight,
+                    null,
+                    _react2.default.createElement('i', { className: 'icon-link', 'data-feather': 'mail' })
+                )
+            )
+        ),
+        _react2.default.createElement(
+            _elements.Note,
+            null,
+            '\xA9 Eli Badgio'
+        )
+    );
+};
+
+exports.default = Bottom;
+
+/***/ }),
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -870,13 +1040,16 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _templateObject = _taggedTemplateLiteral(['\n    justify-content: center;\n'], ['\n    justify-content: center;\n']),
-    _templateObject2 = _taggedTemplateLiteral(['\n    width: 400px;\n    max-width: 100%;\n    overflow: hidden;\n    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 10px 3px;\n    max-width: calc(100% - 20px);\n    border-radius: 4px;\n'], ['\n    width: 400px;\n    max-width: 100%;\n    overflow: hidden;\n    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 10px 3px;\n    max-width: calc(100% - 20px);\n    border-radius: 4px;\n']),
+var _templateObject = _taggedTemplateLiteral(['\n    margin: 20px;\n    width: fit-content;\n'], ['\n    margin: 20px;\n    width: fit-content;\n']),
+    _templateObject2 = _taggedTemplateLiteral(['\n    width: 420px;\n    max-width: 100%;\n    overflow: hidden;\n    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 10px 3px;\n    border-radius: 4px;\n'], ['\n    width: 420px;\n    max-width: 100%;\n    overflow: hidden;\n    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 10px 3px;\n    border-radius: 4px;\n']),
     _templateObject3 = _taggedTemplateLiteral(['\n    width: 100%;\n    max-height: 200px;\n    overflow: hidden;\n'], ['\n    width: 100%;\n    max-height: 200px;\n    overflow: hidden;\n']),
     _templateObject4 = _taggedTemplateLiteral(['\n    width: 100%;\n'], ['\n    width: 100%;\n']),
-    _templateObject5 = _taggedTemplateLiteral(['\n    color: #424242;\n    margin-top: 10px;\n    margin-bottom: 0;\n'], ['\n    color: #424242;\n    margin-top: 10px;\n    margin-bottom: 0;\n']);
+    _templateObject5 = _taggedTemplateLiteral(['\n    color: #424242;\n    margin-top: 10px;\n    margin-bottom: 0;\n'], ['\n    color: #424242;\n    margin-top: 10px;\n    margin-bottom: 0;\n']),
+    _templateObject6 = _taggedTemplateLiteral(['\n    height: 150px;\n    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 10px 3px;\n    border-radius: 4px;\n    background: #fff;\n    width: fit-content;\n    margin-bottom: 10px;\n    width: 217px;\n'], ['\n    height: 150px;\n    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 10px 3px;\n    border-radius: 4px;\n    background: #fff;\n    width: fit-content;\n    margin-bottom: 10px;\n    width: 217px;\n']),
+    _templateObject7 = _taggedTemplateLiteral(['\n    background: #212121;\n'], ['\n    background: #212121;\n']),
+    _templateObject8 = _taggedTemplateLiteral(['\n    height: 100%;\n'], ['\n    height: 100%;\n']);
 
-var _react = __webpack_require__(1);
+var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -896,7 +1069,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-var RowCenter = (0, _reactEmotion2.default)(_elements.RowWrap)(_templateObject);
+var ColFit = (0, _reactEmotion2.default)(_elements.Column)(_templateObject);
 
 var Design = function (_React$Component) {
     _inherits(Design, _React$Component);
@@ -916,36 +1089,26 @@ var Design = function (_React$Component) {
                 _react2.default.createElement(
                     _elements.SectionHeader,
                     null,
-                    'DESIGN'
+                    'WEB DEVELOPMENT'
                 ),
                 _react2.default.createElement(
-                    _elements.SubHeader,
+                    _elements.RowCenter,
                     null,
-                    'WEB'
-                ),
-                _react2.default.createElement(
-                    RowCenter,
-                    null,
-                    _react2.default.createElement(Card, { title: 'MIRANDA MORRIS ART',
+                    _react2.default.createElement(WebCard, { title: 'MIRANDA MORRIS ART',
                         snapshot: '/ebadgio.github.io/assets/mm-art.png',
-                        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo\n' + '                    d tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venia',
+                        description: 'I was hired by Miranda to develop a portfolio website to display her beautiful artwork.' + ' I wanted viewers of her site to feel like they were at a real art gallery, so I focused on creating a flat ui, with pale grey shades/accents.',
                         url: 'https://www.mirandamorrisart.com',
                         basicUrl: 'MIRANDAMORRISART.COM' }),
-                    _react2.default.createElement(Card, { title: 'STACK HACK TUTORING',
+                    _react2.default.createElement(WebCard, { title: 'STACK HACK TUTORING',
                         snapshot: '/ebadgio.github.io/assets/sh-landing.png',
-                        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo\n' + '                    d tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venia',
+                        description: 'Stack Hack Tutoring is a one on one summer programming course that I founded in summer of 2018.' + ' When developing the website, I wanted to create a startupy/modern feel, so that site viewers would already feel like they are a part of tech.',
                         url: 'https://www.stackhacktutoring.com',
                         basicUrl: 'STACKHACKTUTORING.COM' }),
-                    _react2.default.createElement(Card, { title: 'WALNUT',
+                    _react2.default.createElement(WebCard, { title: 'WALNUT',
                         snapshot: '/ebadgio.github.io/assets/walnut.png',
-                        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo\n' + '                    d tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venia',
+                        description: 'Walnut is social media web app that I and my team worked on for many months. We wanted to create a' + ' site focused on building community engagement. Our ui was heavily influenced by Google Material ui principles.',
                         url: 'https://www.walnutnetwork.com',
                         basicUrl: 'WALNUTNETWORK.COM' })
-                ),
-                _react2.default.createElement(
-                    _elements.SubHeader,
-                    null,
-                    'LOGO/GRAPHIC'
                 )
             );
         }
@@ -962,7 +1125,7 @@ var Snapshot = (0, _reactEmotion2.default)('img')(_templateObject4);
 
 var Title = (0, _reactEmotion2.default)('h2')(_templateObject5);
 
-var Card = function Card(_ref) {
+var WebCard = function WebCard(_ref) {
     var snapshot = _ref.snapshot,
         title = _ref.title,
         description = _ref.description,
@@ -971,7 +1134,7 @@ var Card = function Card(_ref) {
 
     return _react2.default.createElement(
         'a',
-        { href: url, target: '_blank', className: 'm-20' },
+        { href: url, target: '_blank', className: 'm-20', style: { maxWidth: '100%' } },
         _react2.default.createElement(
             Wrapper,
             null,
@@ -990,7 +1153,7 @@ var Card = function Card(_ref) {
                 ),
                 _react2.default.createElement(
                     _elements.Text,
-                    null,
+                    { style: { minHeight: '135px' } },
                     description
                 ),
                 _react2.default.createElement(
@@ -1007,10 +1170,16 @@ var Card = function Card(_ref) {
     );
 };
 
+var LogoWrapper = (0, _reactEmotion2.default)(_elements.Frame)(_templateObject6);
+
+var LogoWrapperDark = (0, _reactEmotion2.default)(LogoWrapper)(_templateObject7);
+
+var Logo = (0, _reactEmotion2.default)('img')(_templateObject8);
+
 exports.default = Design;
 
 /***/ }),
-/* 13 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1024,7 +1193,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _templateObject = _taggedTemplateLiteral(['\n    width: 800px;\n    box-sizing: border-box;\n    padding: 20px 0;\n    max-width: 100%;\n    margin-bottom: 20px;\n'], ['\n    width: 800px;\n    box-sizing: border-box;\n    padding: 20px 0;\n    max-width: 100%;\n    margin-bottom: 20px;\n']);
 
-var _react = __webpack_require__(1);
+var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -1225,7 +1394,7 @@ var Card = function Card(_ref) {
 exports.default = Experience;
 
 /***/ }),
-/* 14 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1239,7 +1408,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _templateObject = _taggedTemplateLiteral(['\n    height: 100vh;\n    background: #212121;\n    width: 100%;\n    color: #fff;\n'], ['\n    height: 100vh;\n    background: #212121;\n    width: 100%;\n    color: #fff;\n']);
 
-var _react = __webpack_require__(1);
+var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -1283,7 +1452,286 @@ var Cover = (0, _reactEmotion2.default)(_elements.Frame)(_templateObject);
 exports.default = Landing;
 
 /***/ }),
-/* 15 */
+/* 17 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _templateObject = _taggedTemplateLiteral(['\n    justify-content: space-between;\n'], ['\n    justify-content: space-between;\n']),
+    _templateObject2 = _taggedTemplateLiteral(['\n    height: 10px;\n    width: 10px;\n    border-radius: 50%;\n    margin: 10px;\n'], ['\n    height: 10px;\n    width: 10px;\n    border-radius: 50%;\n    margin: 10px;\n']),
+    _templateObject3 = _taggedTemplateLiteral(['\n    background: #FFAB00;\n'], ['\n    background: #FFAB00;\n']),
+    _templateObject4 = _taggedTemplateLiteral(['\n    background: #424242;\n'], ['\n    background: #424242;\n']),
+    _templateObject5 = _taggedTemplateLiteral(['\n    background: #ff6e40;\n'], ['\n    background: #ff6e40;\n']),
+    _templateObject6 = _taggedTemplateLiteral(['\n    background: #1de9b6;\n'], ['\n    background: #1de9b6;\n']),
+    _templateObject7 = _taggedTemplateLiteral(['\n    background: #00b0ff;\n'], ['\n    background: #00b0ff;\n']),
+    _templateObject8 = _taggedTemplateLiteral(['\n    background: #b388ff;\n'], ['\n    background: #b388ff;\n']),
+    _templateObject9 = _taggedTemplateLiteral(['\n    background: #8C9EFF;\n'], ['\n    background: #8C9EFF;\n']),
+    _templateObject10 = _taggedTemplateLiteral(['\n    background: #bdbdbd;\n'], ['\n    background: #bdbdbd;\n']),
+    _templateObject11 = _taggedTemplateLiteral(['\n    width: 320px;\n    box-sizing: border-box;\n    padding: 10px;\n    margin: 20px;\n    max-width: 100%;\n'], ['\n    width: 320px;\n    box-sizing: border-box;\n    padding: 10px;\n    margin: 20px;\n    max-width: 100%;\n']);
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactEmotion = __webpack_require__(3);
+
+var _reactEmotion2 = _interopRequireDefault(_reactEmotion);
+
+var _elements = __webpack_require__(2);
+
+var _components = __webpack_require__(5);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+var RowBetween = (0, _reactEmotion2.default)(_elements.Row)(_templateObject);
+
+var Projects = function Projects() {
+    return _react2.default.createElement(
+        _elements.Section,
+        null,
+        _react2.default.createElement(
+            _elements.SectionHeader,
+            null,
+            'PROJECTS'
+        ),
+        _react2.default.createElement(
+            _elements.Column,
+            { className: 'mr-auto ml-10 p-10' },
+            _react2.default.createElement(
+                _elements.Row,
+                null,
+                _react2.default.createElement(Systems, null),
+                _react2.default.createElement(
+                    _elements.Note,
+                    null,
+                    'Systems'
+                )
+            ),
+            _react2.default.createElement(
+                _elements.Row,
+                null,
+                _react2.default.createElement(Software, null),
+                _react2.default.createElement(
+                    _elements.Note,
+                    null,
+                    'Software'
+                )
+            ),
+            _react2.default.createElement(
+                _elements.Row,
+                null,
+                _react2.default.createElement(DataSci, null),
+                _react2.default.createElement(
+                    _elements.Note,
+                    null,
+                    'Data Science'
+                )
+            ),
+            _react2.default.createElement(
+                _elements.Row,
+                null,
+                _react2.default.createElement(Ml, null),
+                _react2.default.createElement(
+                    _elements.Note,
+                    null,
+                    'Machine Learning'
+                )
+            ),
+            _react2.default.createElement(
+                _elements.Row,
+                null,
+                _react2.default.createElement(Ui, null),
+                _react2.default.createElement(
+                    _elements.Note,
+                    null,
+                    'UI/UX'
+                )
+            ),
+            _react2.default.createElement(
+                _elements.Row,
+                null,
+                _react2.default.createElement(Api, null),
+                _react2.default.createElement(
+                    _elements.Note,
+                    null,
+                    'API Design'
+                )
+            ),
+            _react2.default.createElement(
+                _elements.Row,
+                null,
+                _react2.default.createElement(Open, null),
+                _react2.default.createElement(
+                    _elements.Note,
+                    null,
+                    'Open Source'
+                )
+            )
+        ),
+        _react2.default.createElement(
+            _elements.RowCenter,
+            null,
+            _react2.default.createElement(ProjectCard, { title: 'WORKSHOP',
+                link: 'https://github.com/ebadgio/workshop',
+                description: 'Website for editing and sharing creative writing works such as short stories, poems, screenplays, personal essays, etc. Core feature: a Medium style rich text editor complete with auto-saving.',
+                tags: _react2.default.createElement(
+                    _elements.RowFit,
+                    null,
+                    _react2.default.createElement(Api, null),
+                    _react2.default.createElement(Ui, null)
+                ) }),
+            _react2.default.createElement(ProjectCard, { title: 'WEB PROXY',
+                description: 'Developed a fully functional concurrent web proxy written in C. Implemented the concurrent functionality using a producer/consumer pre-threading approach.',
+                tags: _react2.default.createElement(
+                    _elements.RowFit,
+                    null,
+                    _react2.default.createElement(Systems, null),
+                    _react2.default.createElement(Software, null)
+                ) }),
+            _react2.default.createElement(ProjectCard, { title: 'TEXT DOCUMENT CLASSIFIER',
+                description: 'Used Google’s open-source TensorFlow machine learning tool to implement some deep learning architectures in order to classify sequences of raw text into their origin documents.',
+                tags: _react2.default.createElement(
+                    _elements.RowFit,
+                    null,
+                    _react2.default.createElement(DataSci, null),
+                    _react2.default.createElement(Ml, null),
+                    _react2.default.createElement(Software, null)
+                ) }),
+            _react2.default.createElement(ProjectCard, { title: 'WALNUT',
+                link: 'https://github.com/ebadgio/walnut',
+                description: 'Walnut is Web app focused on building community engagement. This is the first full stack web app I ever worked on. It was a great way to develop strong MERN stack skills to build on moving forward.',
+                tags: _react2.default.createElement(
+                    _elements.RowFit,
+                    null,
+                    _react2.default.createElement(Api, null),
+                    _react2.default.createElement(Ui, null)
+                ) }),
+            _react2.default.createElement(ProjectCard, { title: 'KAIROS FACE RECOGNITION',
+                link: 'https://github.com/ebadgio/kairos-api-demo',
+                description: 'Built a basic React.js web app in order to learn how to use the Kairos face recognition api. Check out the demo on my github.',
+                tags: _react2.default.createElement(
+                    _elements.RowFit,
+                    null,
+                    _react2.default.createElement(Api, null)
+                ) }),
+            _react2.default.createElement(ProjectCard, { title: 'TINY SHELL',
+                description: 'Built a "tiny" Unix shell program that supports job control and recognizes and interprets basic built-in Unix commands such as "quit", "fg", "bg", and "jobs". ',
+                tags: _react2.default.createElement(
+                    _elements.RowFit,
+                    null,
+                    _react2.default.createElement(Systems, null),
+                    _react2.default.createElement(Software, null)
+                ) }),
+            _react2.default.createElement(ProjectCard, { title: 'PART-OF-SPEECH TAGGING',
+                description: 'Designed and implemented a stochastic part-of-speech tagger in Python, base around first and second order Hidden Markov Models. With a 2,000,000 word training corpus, 97.6% accuracy was obtained using my trigram Viterbi model.',
+                tags: _react2.default.createElement(
+                    _elements.RowFit,
+                    null,
+                    _react2.default.createElement(Software, null),
+                    _react2.default.createElement(DataSci, null)
+                ) }),
+            _react2.default.createElement(ProjectCard, { title: 'NODE REACT STARTERS',
+                link: 'https://github.com/ebadgio/node-react-starter',
+                description: 'Created two Node.js/React.js web app starter templates: a bare bones, light weight one; and a more robust one too. I use these whenever I\'m starting a new node/react site.',
+                tags: _react2.default.createElement(
+                    _elements.RowFit,
+                    null,
+                    _react2.default.createElement(Open, null)
+                ) }),
+            _react2.default.createElement(ProjectCard, { title: 'FLASK BLOG TEMPLATE',
+                link: 'https://github.com/ebadgio/flask-blog-template',
+                description: 'Made this template to use while teaching my Stack Hack students web dev. It\'s a basic blogging web app template made with Python Flask on the backend. It\'s available for everyone as a starting point for their app!',
+                tags: _react2.default.createElement(
+                    _elements.RowFit,
+                    null,
+                    _react2.default.createElement(Open, null),
+                    _react2.default.createElement(Api, null),
+                    _react2.default.createElement(Ui, null)
+                ) })
+        )
+    );
+};
+
+var Tag = (0, _reactEmotion2.default)('div')(_templateObject2);
+
+// '#424242'; // Systems
+// '#FFAB00'; // Software
+// '#ff6e40'; // Mobile
+// '#1de9b6'; // Data Science
+// '#00b0ff'; // Machine Learning
+// '#8C9EFF'; // UI/UX
+// '#b388ff'; // API Design
+// '#bdbdbd'; // Open Source
+
+var Software = (0, _reactEmotion2.default)(Tag)(_templateObject3);
+
+var Systems = (0, _reactEmotion2.default)(Tag)(_templateObject4);
+
+var Mobile = (0, _reactEmotion2.default)(Tag)(_templateObject5);
+
+var DataSci = (0, _reactEmotion2.default)(Tag)(_templateObject6);
+
+var Ml = (0, _reactEmotion2.default)(Tag)(_templateObject7);
+
+var Api = (0, _reactEmotion2.default)(Tag)(_templateObject8);
+
+var Ui = (0, _reactEmotion2.default)(Tag)(_templateObject9);
+
+var Open = (0, _reactEmotion2.default)(Tag)(_templateObject10);
+
+var Wrapper = (0, _reactEmotion2.default)(_elements.Column)(_templateObject11);
+
+var ProjectCard = function ProjectCard(_ref) {
+    var title = _ref.title,
+        description = _ref.description,
+        link = _ref.link,
+        tags = _ref.tags;
+
+    return _react2.default.createElement(
+        Wrapper,
+        null,
+        _react2.default.createElement(
+            _elements.SubTitle,
+            null,
+            title
+        ),
+        _react2.default.createElement(
+            _elements.Text,
+            { style: { minHeight: '140px' } },
+            description
+        ),
+        _react2.default.createElement(
+            RowBetween,
+            { style: { height: '42px' } },
+            link ? _react2.default.createElement(
+                'a',
+                { href: link, target: '_blank' },
+                _react2.default.createElement(
+                    _components.ButtonIconSimple,
+                    null,
+                    _react2.default.createElement('i', { className: 'icon-link', 'data-feather': 'github' })
+                )
+            ) : _react2.default.createElement(
+                _elements.Note,
+                null,
+                'Course Work'
+            ),
+            tags
+        )
+    );
+};
+
+exports.default = Projects;
+
+/***/ }),
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1297,7 +1745,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _templateObject = _taggedTemplateLiteral(['\n    background: #82b1ff;\n'], ['\n    background: #82b1ff;\n']);
 
-var _react = __webpack_require__(1);
+var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -1349,7 +1797,7 @@ var Skills = function (_React$Component) {
 exports.default = Skills;
 
 /***/ }),
-/* 16 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1387,15 +1835,15 @@ if (process.env.NODE_ENV === 'production') {
   // DCE check should happen before ReactDOM bundle executes so that
   // DevTools can report bad minification during injection.
   checkDCE();
-  module.exports = __webpack_require__(29);
+  module.exports = __webpack_require__(31);
 } else {
-  module.exports = __webpack_require__(28);
+  module.exports = __webpack_require__(30);
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 17 */
+/* 20 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1440,11 +1888,11 @@ function murmurhash2_32_gc(str) {
 
 
 /***/ }),
-/* 18 */
+/* 21 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__emotion_memoize__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__emotion_memoize__ = __webpack_require__(8);
 
 
 var reactPropsRegex = /^((children|dangerouslySetInnerHTML|key|ref|autoFocus|defaultValue|defaultChecked|innerHTML|suppressContentEditableWarning|valueLink|accept|acceptCharset|accessKey|action|allow|allowFullScreen|allowTransparency|alt|async|autoComplete|autoPlay|capture|cellPadding|cellSpacing|challenge|charSet|checked|cite|classID|className|cols|colSpan|content|contentEditable|contextMenu|controls|controlsList|coords|crossOrigin|data|dateTime|default|defer|dir|disabled|download|draggable|encType|form|formAction|formEncType|formMethod|formNoValidate|formTarget|frameBorder|headers|height|hidden|high|href|hrefLang|htmlFor|httpEquiv|id|inputMode|integrity|is|keyParams|keyType|kind|label|lang|list|loop|low|marginHeight|marginWidth|max|maxLength|media|mediaGroup|method|min|minLength|multiple|muted|name|nonce|noValidate|open|optimum|pattern|placeholder|playsInline|poster|preload|profile|radioGroup|readOnly|referrerPolicy|rel|required|reversed|role|rows|rowSpan|sandbox|scope|scoped|scrolling|seamless|selected|shape|size|sizes|slot|span|spellCheck|src|srcDoc|srcLang|srcSet|start|step|style|summary|tabIndex|target|title|type|useMap|value|width|wmode|wrap|about|datatype|inlist|prefix|property|resource|typeof|vocab|autoCapitalize|autoCorrect|autoSave|color|itemProp|itemScope|itemType|itemID|itemRef|results|security|unselectable|accentHeight|accumulate|additive|alignmentBaseline|allowReorder|alphabetic|amplitude|arabicForm|ascent|attributeName|attributeType|autoReverse|azimuth|baseFrequency|baselineShift|baseProfile|bbox|begin|bias|by|calcMode|capHeight|clip|clipPathUnits|clipPath|clipRule|colorInterpolation|colorInterpolationFilters|colorProfile|colorRendering|contentScriptType|contentStyleType|cursor|cx|cy|d|decelerate|descent|diffuseConstant|direction|display|divisor|dominantBaseline|dur|dx|dy|edgeMode|elevation|enableBackground|end|exponent|externalResourcesRequired|fill|fillOpacity|fillRule|filter|filterRes|filterUnits|floodColor|floodOpacity|focusable|fontFamily|fontSize|fontSizeAdjust|fontStretch|fontStyle|fontVariant|fontWeight|format|from|fr|fx|fy|g1|g2|glyphName|glyphOrientationHorizontal|glyphOrientationVertical|glyphRef|gradientTransform|gradientUnits|hanging|horizAdvX|horizOriginX|ideographic|imageRendering|in|in2|intercept|k|k1|k2|k3|k4|kernelMatrix|kernelUnitLength|kerning|keyPoints|keySplines|keyTimes|lengthAdjust|letterSpacing|lightingColor|limitingConeAngle|local|markerEnd|markerMid|markerStart|markerHeight|markerUnits|markerWidth|mask|maskContentUnits|maskUnits|mathematical|mode|numOctaves|offset|opacity|operator|order|orient|orientation|origin|overflow|overlinePosition|overlineThickness|panose1|paintOrder|pathLength|patternContentUnits|patternTransform|patternUnits|pointerEvents|points|pointsAtX|pointsAtY|pointsAtZ|preserveAlpha|preserveAspectRatio|primitiveUnits|r|radius|refX|refY|renderingIntent|repeatCount|repeatDur|requiredExtensions|requiredFeatures|restart|result|rotate|rx|ry|scale|seed|shapeRendering|slope|spacing|specularConstant|specularExponent|speed|spreadMethod|startOffset|stdDeviation|stemh|stemv|stitchTiles|stopColor|stopOpacity|strikethroughPosition|strikethroughThickness|string|stroke|strokeDasharray|strokeDashoffset|strokeLinecap|strokeLinejoin|strokeMiterlimit|strokeOpacity|strokeWidth|surfaceScale|systemLanguage|tableValues|targetX|targetY|textAnchor|textDecoration|textRendering|textLength|to|transform|u1|u2|underlinePosition|underlineThickness|unicode|unicodeBidi|unicodeRange|unitsPerEm|vAlphabetic|vHanging|vIdeographic|vMathematical|values|vectorEffect|version|vertAdvY|vertOriginX|vertOriginY|viewBox|viewTarget|visibility|widths|wordSpacing|writingMode|x|xHeight|x1|x2|xChannelSelector|xlinkActuate|xlinkArcrole|xlinkHref|xlinkRole|xlinkShow|xlinkTitle|xlinkType|xmlBase|xmlns|xmlnsXlink|xmlLang|xmlSpace|y|y1|y2|yChannelSelector|z|zoomAndPan|for|class)|(on[A-Z].*)|((data|aria|x)-.*))$/i;
@@ -1454,7 +1902,7 @@ var index = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__emotion_memoize__
 
 
 /***/ }),
-/* 19 */
+/* 22 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1507,7 +1955,7 @@ var unitlessKeys = {
 
 
 /***/ }),
-/* 20 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1515,39 +1963,47 @@ var unitlessKeys = {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(1);
+var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(16);
+var _reactDom = __webpack_require__(19);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
 var _elements = __webpack_require__(2);
 
-var _Navbar = __webpack_require__(10);
+var _Navbar = __webpack_require__(11);
 
 var _Navbar2 = _interopRequireDefault(_Navbar);
 
-var _Landing = __webpack_require__(14);
+var _Landing = __webpack_require__(16);
 
 var _Landing2 = _interopRequireDefault(_Landing);
 
-var _Bio = __webpack_require__(11);
+var _Bio = __webpack_require__(12);
 
 var _Bio2 = _interopRequireDefault(_Bio);
 
-var _Experience = __webpack_require__(13);
+var _Experience = __webpack_require__(15);
 
 var _Experience2 = _interopRequireDefault(_Experience);
 
-var _Skills = __webpack_require__(15);
+var _Skills = __webpack_require__(18);
 
 var _Skills2 = _interopRequireDefault(_Skills);
 
-var _Design = __webpack_require__(12);
+var _Design = __webpack_require__(14);
 
 var _Design2 = _interopRequireDefault(_Design);
+
+var _Projects = __webpack_require__(17);
+
+var _Projects2 = _interopRequireDefault(_Projects);
+
+var _Bottom = __webpack_require__(13);
+
+var _Bottom2 = _interopRequireDefault(_Bottom);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -1575,7 +2031,9 @@ var App = function (_React$Component) {
                 _react2.default.createElement(_Navbar2.default, null),
                 _react2.default.createElement(_Landing2.default, null),
                 _react2.default.createElement(_Bio2.default, null),
-                _react2.default.createElement(_Design2.default, null)
+                _react2.default.createElement(_Design2.default, null),
+                _react2.default.createElement(_Projects2.default, null),
+                _react2.default.createElement(_Bottom2.default, null)
             );
         }
     }]);
@@ -1586,66 +2044,13 @@ var App = function (_React$Component) {
 _reactDom2.default.render(_react2.default.createElement(App, null), document.getElementById('root'));
 
 /***/ }),
-/* 21 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.ButtonIcon = exports.ButtonPrimary = exports.ButtonOutlinePrimary = exports.Avatar = undefined;
-
-var _templateObject = _taggedTemplateLiteral(['\n    border-radius: 50%;\n    overflow: hidden;\n'], ['\n    border-radius: 50%;\n    overflow: hidden;\n']),
-    _templateObject2 = _taggedTemplateLiteral(['\n    height: 40px;\n\twidth: fit-content;\n\tborder-radius: 6px;\n\tmargin: 10px 0;\n\tcursor: pointer;\n\tpadding: 0 10px;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    -webkit-transition: color .35s ease, background .35s ease;\n\ttransition: color .35s ease, background .35s ease;\n\tfont-size: 16px;\n\tfont-family: sans-serif;\n'], ['\n    height: 40px;\n\twidth: fit-content;\n\tborder-radius: 6px;\n\tmargin: 10px 0;\n\tcursor: pointer;\n\tpadding: 0 10px;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    -webkit-transition: color .35s ease, background .35s ease;\n\ttransition: color .35s ease, background .35s ease;\n\tfont-size: 16px;\n\tfont-family: sans-serif;\n']),
-    _templateObject3 = _taggedTemplateLiteral(['\n    border: 1px solid;\n'], ['\n    border: 1px solid;\n']),
-    _templateObject4 = _taggedTemplateLiteral(['\n    color: #8c9eff;\n    &:hover {\n        color: #5870cb\n    }\n'], ['\n    color: #8c9eff;\n    &:hover {\n        color: #5870cb\n    }\n']),
-    _templateObject5 = _taggedTemplateLiteral(['\n    background: #8c9eff;\n    color: #fff;\n    &:hover {\n        background: #5870cb\n    }\n'], ['\n    background: #8c9eff;\n    color: #fff;\n    &:hover {\n        background: #5870cb\n    }\n']),
-    _templateObject6 = _taggedTemplateLiteral(['\n    border-radius: 50%;\n    box-sizing: border-box;\n    padding: 10px;\n    color: #bdbdbd;\n    border: 1px solid;\n    height: 42px;\n    &:hover {\n        color: #757575;\n    }  \n'], ['\n    border-radius: 50%;\n    box-sizing: border-box;\n    padding: 10px;\n    color: #bdbdbd;\n    border: 1px solid;\n    height: 42px;\n    &:hover {\n        color: #757575;\n    }  \n']);
-
-var _react = __webpack_require__(1);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactEmotion = __webpack_require__(3);
-
-var _reactEmotion2 = _interopRequireDefault(_reactEmotion);
-
-var _elements = __webpack_require__(2);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
-
-var Wrapper = (0, _reactEmotion2.default)(_elements.Frame)(_templateObject);
-
-var Avatar = exports.Avatar = function Avatar(props) {
-    return _react2.default.createElement(
-        Wrapper,
-        { id: props.id },
-        _react2.default.createElement('img', { src: props.src, style: { height: '100%' } })
-    );
-};
-
-var Button = (0, _reactEmotion2.default)('div')(_templateObject2);
-
-var ButtonOutline = (0, _reactEmotion2.default)(Button)(_templateObject3);
-
-var ButtonOutlinePrimary = exports.ButtonOutlinePrimary = (0, _reactEmotion2.default)(ButtonOutline)(_templateObject4);
-
-var ButtonPrimary = exports.ButtonPrimary = (0, _reactEmotion2.default)(Button)(_templateObject5);
-
-var ButtonIcon = exports.ButtonIcon = (0, _reactEmotion2.default)(Button)(_templateObject6);
-
-/***/ }),
-/* 22 */
+/* 24 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(process) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_prop_types__ = __webpack_require__(27);
+/* WEBPACK VAR INJECTION */(function(process) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_prop_types__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__emotion_is_prop_valid__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__emotion_is_prop_valid__ = __webpack_require__(21);
 
 
 
@@ -1869,18 +2274,18 @@ function createEmotionStyled(emotion, view) {
 
 /* harmony default export */ __webpack_exports__["a"] = (createEmotionStyled);
 
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(1)))
 
 /***/ }),
-/* 23 */
+/* 25 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(process) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__emotion_memoize__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__emotion_unitless__ = __webpack_require__(19);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__emotion_hash__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__emotion_stylis__ = __webpack_require__(24);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_stylis_rule_sheet__ = __webpack_require__(37);
+/* WEBPACK VAR INJECTION */(function(process) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__emotion_memoize__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__emotion_unitless__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__emotion_hash__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__emotion_stylis__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_stylis_rule_sheet__ = __webpack_require__(39);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_stylis_rule_sheet___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_stylis_rule_sheet__);
 
 
@@ -2403,10 +2808,10 @@ function createEmotion(context, options) {
 /* harmony default export */ __webpack_exports__["a"] = (createEmotion);
 //# sourceMappingURL=index.esm.js.map
 
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(1)))
 
 /***/ }),
-/* 24 */
+/* 26 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3043,7 +3448,7 @@ var W = function da(X) {
 
 
 /***/ }),
-/* 25 */
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3056,7 +3461,7 @@ var W = function da(X) {
 
 
 
-var ReactPropTypesSecret = __webpack_require__(6);
+var ReactPropTypesSecret = __webpack_require__(7);
 
 function emptyFunction() {}
 
@@ -3109,7 +3514,7 @@ module.exports = function() {
 
 
 /***/ }),
-/* 26 */
+/* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3124,8 +3529,8 @@ module.exports = function() {
 
 var assign = __webpack_require__(4);
 
-var ReactPropTypesSecret = __webpack_require__(6);
-var checkPropTypes = __webpack_require__(5);
+var ReactPropTypesSecret = __webpack_require__(7);
+var checkPropTypes = __webpack_require__(6);
 
 var printWarning = function() {};
 
@@ -3669,10 +4074,10 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
   return ReactPropTypes;
 };
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 27 */
+/* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(process) {/**
@@ -3697,17 +4102,17 @@ if (process.env.NODE_ENV !== 'production') {
   // By explicitly using `prop-types` you are opting into new development behavior.
   // http://fb.me/prop-types-in-prod
   var throwOnDirectAccess = true;
-  module.exports = __webpack_require__(26)(isValidElement, throwOnDirectAccess);
+  module.exports = __webpack_require__(28)(isValidElement, throwOnDirectAccess);
 } else {
   // By explicitly using `prop-types` you are opting into new production behavior.
   // http://fb.me/prop-types-in-prod
-  module.exports = __webpack_require__(25)();
+  module.exports = __webpack_require__(27)();
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 28 */
+/* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3728,11 +4133,11 @@ if (process.env.NODE_ENV !== "production") {
   (function() {
 'use strict';
 
-var React = __webpack_require__(1);
+var React = __webpack_require__(0);
 var _assign = __webpack_require__(4);
-var checkPropTypes = __webpack_require__(5);
-var schedule = __webpack_require__(9);
-var tracking = __webpack_require__(36);
+var checkPropTypes = __webpack_require__(6);
+var schedule = __webpack_require__(10);
+var tracking = __webpack_require__(38);
 
 /**
  * Use invariant() to assert state which your program assumes to be true.
@@ -21970,10 +22375,10 @@ module.exports = reactDom;
   })();
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 29 */
+/* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21989,7 +22394,7 @@ module.exports = reactDom;
 /*
  Modernizr 3.0.0pre (Custom Build) | MIT
 */
-var aa=__webpack_require__(1),n=__webpack_require__(4),ba=__webpack_require__(9);function ca(a,b,c,d,e,f,g,h){if(!a){a=void 0;if(void 0===b)a=Error("Minified exception occurred; use the non-minified dev environment for the full error message and additional helpful warnings.");else{var k=[c,d,e,f,g,h],l=0;a=Error(b.replace(/%s/g,function(){return k[l++]}));a.name="Invariant Violation"}a.framesToPop=1;throw a;}}
+var aa=__webpack_require__(0),n=__webpack_require__(4),ba=__webpack_require__(10);function ca(a,b,c,d,e,f,g,h){if(!a){a=void 0;if(void 0===b)a=Error("Minified exception occurred; use the non-minified dev environment for the full error message and additional helpful warnings.");else{var k=[c,d,e,f,g,h],l=0;a=Error(b.replace(/%s/g,function(){return k[l++]}));a.name="Invariant Violation"}a.framesToPop=1;throw a;}}
 function t(a){for(var b=arguments.length-1,c="https://reactjs.org/docs/error-decoder.html?invariant="+a,d=0;d<b;d++)c+="&args[]="+encodeURIComponent(arguments[d+1]);ca(!1,"Minified React error #"+a+"; visit %s for the full message or use the non-minified dev environment for full errors and additional helpful warnings. ",c)}aa?void 0:t("227");function da(a,b,c,d,e,f,g,h,k){var l=Array.prototype.slice.call(arguments,3);try{b.apply(c,l)}catch(m){this.onError(m)}}
 var ea=!1,fa=null,ha=!1,ia=null,ja={onError:function(a){ea=!0;fa=a}};function ka(a,b,c,d,e,f,g,h,k){ea=!1;fa=null;da.apply(ja,arguments)}function la(a,b,c,d,e,f,g,h,k){ka.apply(this,arguments);if(ea){if(ea){var l=fa;ea=!1;fa=null}else t("198"),l=void 0;ha||(ha=!0,ia=l)}}var ma=null,na={};
 function oa(){if(ma)for(var a in na){var b=na[a],c=ma.indexOf(a);-1<c?void 0:t("96",a);if(!pa[c]){b.extractEvents?void 0:t("97",a);pa[c]=b;c=b.eventTypes;for(var d in c){var e=void 0;var f=c[d],g=b,h=d;qa.hasOwnProperty(h)?t("99",h):void 0;qa[h]=f;var k=f.phasedRegistrationNames;if(k){for(e in k)k.hasOwnProperty(e)&&ra(k[e],g,h);e=!0}else f.registrationName?(ra(f.registrationName,g,h),e=!0):e=!1;e?void 0:t("98",d,a)}}}}
@@ -22215,7 +22620,7 @@ var Nh={default:Mh},Oh=Nh&&Mh||Nh;module.exports=Oh.default||Oh;
 
 
 /***/ }),
-/* 30 */
+/* 32 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22237,7 +22642,7 @@ if (process.env.NODE_ENV !== "production") {
 'use strict';
 
 var _assign = __webpack_require__(4);
-var checkPropTypes = __webpack_require__(5);
+var checkPropTypes = __webpack_require__(6);
 
 // TODO: this is special because it gets imported during build.
 
@@ -23946,10 +24351,10 @@ module.exports = react;
   })();
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 31 */
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23980,7 +24385,7 @@ assign:m}},Y={default:X},Z=Y&&X||Y;module.exports=Z.default||Z;
 
 
 /***/ }),
-/* 32 */
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24412,10 +24817,10 @@ exports.unstable_unsubscribe = unstable_unsubscribe;
   })();
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 33 */
+/* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24432,7 +24837,7 @@ Object.defineProperty(exports,"__esModule",{value:!0});var b=0;exports.__interac
 
 
 /***/ }),
-/* 34 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24852,10 +25257,10 @@ if (!canUseDOM) {
   })();
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 35 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24877,22 +25282,22 @@ q=null}}}else{var G=new Map;exports.unstable_scheduleWork=function(a){var b={sch
 
 
 /***/ }),
-/* 36 */
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {
 
 if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(33);
+  module.exports = __webpack_require__(35);
 } else {
-  module.exports = __webpack_require__(32);
+  module.exports = __webpack_require__(34);
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 37 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
 (function (factory) {
@@ -24946,7 +25351,7 @@ if (process.env.NODE_ENV === 'production') {
 
 
 /***/ }),
-/* 38 */
+/* 40 */
 /***/ (function(module, exports) {
 
 var g;

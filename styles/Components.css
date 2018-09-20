@@ -6,6 +6,7 @@
 #avatar {
     height: 250px;
     min-width: 250px;
+    max-width: 250px;
 }
 
 #links {
@@ -20,4 +21,19 @@
 
 #sh-logo {
     border-radius: 6px;
+}
+
+@media only screen and (max-width: 520px) {
+    #bio-info {
+        flex-direction: column !important;
+    }
+
+    #links {
+        align-items: center !important;
+        height: auto !important;
+    }
+
+    #bio-roles, #bio-blurb {
+        text-align: center;
+    }
 }

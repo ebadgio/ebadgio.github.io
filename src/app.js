@@ -8,6 +8,8 @@ import Bio from "./sections/Bio";
 import Experience from "./sections/Experience";
 import Skills from "./sections/Skills";
 import Design from "./sections/Design";
+import Projects from "./sections/Projects";
+import Bottom from "./sections/Bottom";
 
 class App extends React.Component {
     constructor() {
@@ -22,6 +24,8 @@ class App extends React.Component {
                 <Bio />
                 {/*<Experience/>*/}
                 <Design />
+                <Projects />
+                <Bottom />
             </ColumnCenter>
         )
     }

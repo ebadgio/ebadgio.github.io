@@ -26,7 +26,7 @@ class Navbar extends React.Component {
 const Nav = styled(Frame)`
     height: 57px;
     width: 100%;
-    position: fixed;
+    position: absolute;
     top:0;
     z-index: 1;
     color: #fff;

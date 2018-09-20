@@ -118,7 +118,9 @@ a {
 .p-10 {
     padding: 10px;
 }
-
+.ml-10 {
+    margin-left: 10px;
+}
 .box {
     box-sizing: border-box;
 }
