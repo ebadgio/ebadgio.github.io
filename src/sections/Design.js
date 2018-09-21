@@ -22,7 +22,7 @@ class Design extends React.Component {
                 {/*</SubHeader>*/}
                 <RowCenter>
                     <WebCard title={'MIRANDA MORRIS ART'}
-                          snapshot={'/ebadgio.github.io/assets/mm-art.png'}
+                          snapshot={'/ebadgio.github.io/assets/mm-art.jpg'}
                           description={'I was hired by Miranda to develop a portfolio website to display her beautiful artwork.' +
                           ' I wanted viewers of her site to feel like they were at a real art gallery, so I focused on creating a flat ui, with pale grey shades/accents.'}
                           url={'https://www.mirandamorrisart.com'}
