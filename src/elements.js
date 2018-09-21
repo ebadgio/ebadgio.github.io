@@ -40,6 +40,8 @@ export const Section = styled(Column)`
     @media (max-width: 420px) {
         padding: 10px !important;
     }
+    width: 100%;
+    overflow: hidden;
 `;
 
 export const SectionHeader = styled('h1')`

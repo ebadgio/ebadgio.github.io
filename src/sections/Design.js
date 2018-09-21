@@ -86,6 +86,10 @@ const Wrapper = styled(Column)`
     overflow: hidden;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 10px 3px;
     border-radius: 4px;
+    @media (max-width: 420px) {
+        margin-right: 0;
+        margin-left: 0;
+    }
 `;
 
 const SnapshotWrapper = styled('div')`

@@ -19,7 +19,7 @@ class App extends React.Component {
     render() {
         return (
             <ColumnCenter>
-                <Navbar/>
+                {/*<Navbar/>*/}
                 <Landing/>
                 <Bio />
                 {/*<Experience/>*/}

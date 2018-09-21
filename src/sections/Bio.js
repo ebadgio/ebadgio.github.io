@@ -11,27 +11,29 @@ class Bio extends React.Component {
 
     render() {
         return(
-            <Section>
+            <Section id="bio">
                 <SectionHeader>ABOUT ME</SectionHeader>
                 <RowApart id="bio-info">
                     <Avatar src="/ebadgio.github.io/assets/eli-2-web.jpg" id="avatar"/>
                     <Column id="links">
-                        <ButtonOutlinePrimary>
-                            <i data-feather="download" className="mr-10" style={{height: '16px', width: '16px'}}/>
-                            Resume
-                        </ButtonOutlinePrimary>
+                        <a href="/ebadgio.github.io/assets/BadgioE_Resume09-18.pdf" target="_blank">
+                            <ButtonOutlinePrimary>
+                                <i data-feather="download" className="mr-10" style={{height: '16px', width: '16px'}}/>
+                                Resume
+                            </ButtonOutlinePrimary>
+                        </a>
                         <RowFit>
-                            <a className="mr-10" href="https://github.com/ebadgio">
+                            <a className="mr-10" href="https://github.com/ebadgio" target="_blank">
                                 <ButtonIcon>
                                     <i className="icon-link" data-feather="github"/>
                                 </ButtonIcon>
                             </a>
-                            <a className="mr-10" href="https://linkedin.com/in/eli-badgio">
+                            <a className="mr-10" href="https://linkedin.com/in/eli-badgio" target="_blank">
                                 <ButtonIcon>
                                     <i className="icon-link" data-feather="linkedin"/>
                                 </ButtonIcon>
                             </a>
-                            <a className="mr-10" href="https://facebook.com/eli.badgio">
+                            <a className="mr-10" href="https://facebook.com/eli.badgio" target="_blank">
                                 <ButtonIcon>
                                     <i className="icon-link" data-feather="facebook"/>
                                 </ButtonIcon>

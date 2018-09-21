@@ -290,7 +290,7 @@ var _templateObject = _taggedTemplateLiteral(['\n    display: flex;\n\talign-ite
     _templateObject5 = _taggedTemplateLiteral(['\n    justify-content: center;\n'], ['\n    justify-content: center;\n']),
     _templateObject6 = _taggedTemplateLiteral(['\n    display: flex;\n    flex-direction: column;\n    width: 100%;\n'], ['\n    display: flex;\n    flex-direction: column;\n    width: 100%;\n']),
     _templateObject7 = _taggedTemplateLiteral(['\n    align-items: center;\n'], ['\n    align-items: center;\n']),
-    _templateObject8 = _taggedTemplateLiteral(['\n    box-sizing: border-box;\n    padding: 40px;\n    max-width: 1400px;\n    margin-bottom: 40px;\n    @media (max-width: 420px) {\n        padding: 10px !important;\n    }\n'], ['\n    box-sizing: border-box;\n    padding: 40px;\n    max-width: 1400px;\n    margin-bottom: 40px;\n    @media (max-width: 420px) {\n        padding: 10px !important;\n    }\n']),
+    _templateObject8 = _taggedTemplateLiteral(['\n    box-sizing: border-box;\n    padding: 40px;\n    max-width: 1400px;\n    margin-bottom: 40px;\n    @media (max-width: 420px) {\n        padding: 10px !important;\n    }\n    width: 100%;\n    overflow: hidden;\n'], ['\n    box-sizing: border-box;\n    padding: 40px;\n    max-width: 1400px;\n    margin-bottom: 40px;\n    @media (max-width: 420px) {\n        padding: 10px !important;\n    }\n    width: 100%;\n    overflow: hidden;\n']),
     _templateObject9 = _taggedTemplateLiteral(['\n    color: #757575;\n    margin-bottom: 20px;\n    align-self: center;\n'], ['\n    color: #757575;\n    margin-bottom: 20px;\n    align-self: center;\n']),
     _templateObject10 = _taggedTemplateLiteral(['\n    color: #bdbdbd;\n'], ['\n    color: #bdbdbd;\n']),
     _templateObject11 = _taggedTemplateLiteral(['\n    width: 100%;\n    border-top: 1px solid #e9e9e9;\n    margin: 10px 0;\n'], ['\n    width: 100%;\n    border-top: 1px solid #e9e9e9;\n    margin: 10px 0;\n']),
@@ -846,7 +846,7 @@ var Bio = function (_React$Component) {
         value: function render() {
             return _react2.default.createElement(
                 _elements.Section,
-                null,
+                { id: "bio" },
                 _react2.default.createElement(
                     _elements.SectionHeader,
                     null,
@@ -860,17 +860,21 @@ var Bio = function (_React$Component) {
                         _elements.Column,
                         { id: "links" },
                         _react2.default.createElement(
-                            _components.ButtonOutlinePrimary,
-                            null,
-                            _react2.default.createElement("i", { "data-feather": "download", className: "mr-10", style: { height: '16px', width: '16px' } }),
-                            "Resume"
+                            "a",
+                            { href: "/ebadgio.github.io/assets/BadgioE_Resume09-18.pdf", target: "_blank" },
+                            _react2.default.createElement(
+                                _components.ButtonOutlinePrimary,
+                                null,
+                                _react2.default.createElement("i", { "data-feather": "download", className: "mr-10", style: { height: '16px', width: '16px' } }),
+                                "Resume"
+                            )
                         ),
                         _react2.default.createElement(
                             _elements.RowFit,
                             null,
                             _react2.default.createElement(
                                 "a",
-                                { className: "mr-10", href: "https://github.com/ebadgio" },
+                                { className: "mr-10", href: "https://github.com/ebadgio", target: "_blank" },
                                 _react2.default.createElement(
                                     _components.ButtonIcon,
                                     null,
@@ -879,7 +883,7 @@ var Bio = function (_React$Component) {
                             ),
                             _react2.default.createElement(
                                 "a",
-                                { className: "mr-10", href: "https://linkedin.com/in/eli-badgio" },
+                                { className: "mr-10", href: "https://linkedin.com/in/eli-badgio", target: "_blank" },
                                 _react2.default.createElement(
                                     _components.ButtonIcon,
                                     null,
@@ -888,7 +892,7 @@ var Bio = function (_React$Component) {
                             ),
                             _react2.default.createElement(
                                 "a",
-                                { className: "mr-10", href: "https://facebook.com/eli.badgio" },
+                                { className: "mr-10", href: "https://facebook.com/eli.badgio", target: "_blank" },
                                 _react2.default.createElement(
                                     _components.ButtonIcon,
                                     null,
@@ -982,7 +986,7 @@ var Bottom = function Bottom() {
             null,
             _react2.default.createElement(
                 'a',
-                { className: 'mr-10', href: 'https://github.com/ebadgio' },
+                { className: 'mr-10', href: 'https://github.com/ebadgio', target: '_blank' },
                 _react2.default.createElement(
                     _components.ButtonIconLight,
                     null,
@@ -991,7 +995,7 @@ var Bottom = function Bottom() {
             ),
             _react2.default.createElement(
                 'a',
-                { className: 'mr-10', href: 'https://linkedin.com/in/eli-badgio' },
+                { className: 'mr-10', href: 'https://linkedin.com/in/eli-badgio', target: '_blank' },
                 _react2.default.createElement(
                     _components.ButtonIconLight,
                     null,
@@ -1000,7 +1004,7 @@ var Bottom = function Bottom() {
             ),
             _react2.default.createElement(
                 'a',
-                { className: 'mr-10', href: 'https://facebook.com/eli.badgio' },
+                { className: 'mr-10', href: 'https://facebook.com/eli.badgio', target: '_blank' },
                 _react2.default.createElement(
                     _components.ButtonIconLight,
                     null,
@@ -1041,7 +1045,7 @@ Object.defineProperty(exports, "__esModule", {
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _templateObject = _taggedTemplateLiteral(['\n    margin: 20px;\n    width: fit-content;\n'], ['\n    margin: 20px;\n    width: fit-content;\n']),
-    _templateObject2 = _taggedTemplateLiteral(['\n    width: 420px;\n    max-width: 100%;\n    overflow: hidden;\n    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 10px 3px;\n    border-radius: 4px;\n'], ['\n    width: 420px;\n    max-width: 100%;\n    overflow: hidden;\n    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 10px 3px;\n    border-radius: 4px;\n']),
+    _templateObject2 = _taggedTemplateLiteral(['\n    width: 420px;\n    max-width: 100%;\n    overflow: hidden;\n    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 10px 3px;\n    border-radius: 4px;\n    @media (max-width: 420px) {\n        margin-right: 0;\n        margin-left: 0;\n    }\n'], ['\n    width: 420px;\n    max-width: 100%;\n    overflow: hidden;\n    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 10px 3px;\n    border-radius: 4px;\n    @media (max-width: 420px) {\n        margin-right: 0;\n        margin-left: 0;\n    }\n']),
     _templateObject3 = _taggedTemplateLiteral(['\n    width: 100%;\n    max-height: 200px;\n    overflow: hidden;\n'], ['\n    width: 100%;\n    max-height: 200px;\n    overflow: hidden;\n']),
     _templateObject4 = _taggedTemplateLiteral(['\n    width: 100%;\n'], ['\n    width: 100%;\n']),
     _templateObject5 = _taggedTemplateLiteral(['\n    color: #424242;\n    margin-top: 10px;\n    margin-bottom: 0;\n'], ['\n    color: #424242;\n    margin-top: 10px;\n    margin-bottom: 0;\n']),
@@ -1406,7 +1410,10 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _templateObject = _taggedTemplateLiteral(['\n    height: 100vh;\n    background: #212121;\n    width: 100%;\n    color: #fff;\n'], ['\n    height: 100vh;\n    background: #212121;\n    width: 100%;\n    color: #fff;\n']);
+var _templateObject = _taggedTemplateLiteral(['\n    width: fit-content;\n'], ['\n    width: fit-content;\n']),
+    _templateObject2 = _taggedTemplateLiteral(['\n    height: 100vh;\n    background: #212121;\n    width: 100%;\n    color: #fff;\n    position: relative;\n    min-height: 500px;\n'], ['\n    height: 100vh;\n    background: #212121;\n    width: 100%;\n    color: #fff;\n    position: relative;\n    min-height: 500px;\n']),
+    _templateObject3 = _taggedTemplateLiteral(['\n    height: 50px;\n    width: 50px;\n    border-radius: 50%;\n    transition: background .25s ease;\n'], ['\n    height: 50px;\n    width: 50px;\n    border-radius: 50%;\n    transition: background .25s ease;\n']),
+    _templateObject4 = _taggedTemplateLiteral(['\n    color: #fff;\n    margin: 40px;\n    transition: opacity .35s ease;\n    opacity: 0;\n'], ['\n    color: #fff;\n    margin: 40px;\n    transition: opacity .35s ease;\n    opacity: 0;\n']);
 
 var _react = __webpack_require__(0);
 
@@ -1420,13 +1427,15 @@ var _elements = __webpack_require__(2);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
-
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+var ColumnFit = (0, _reactEmotion2.default)(_elements.Column)(_templateObject);
 
 var Landing = function (_React$Component) {
     _inherits(Landing, _React$Component);
@@ -1434,20 +1443,91 @@ var Landing = function (_React$Component) {
     function Landing() {
         _classCallCheck(this, Landing);
 
-        return _possibleConstructorReturn(this, (Landing.__proto__ || Object.getPrototypeOf(Landing)).call(this));
+        var _this = _possibleConstructorReturn(this, (Landing.__proto__ || Object.getPrototypeOf(Landing)).call(this));
+
+        _this.state = {};
+        return _this;
     }
 
     _createClass(Landing, [{
+        key: 'componentDidMount',
+        value: function componentDidMount() {
+            var _this2 = this;
+
+            setTimeout(function () {
+                return _this2.setState({ animate: true });
+            }, 100);
+            setTimeout(function () {
+                return _this2.setState({ animate1: true });
+            }, 300);
+            setTimeout(function () {
+                return _this2.setState({ animate2: true });
+            }, 500);
+            setTimeout(function () {
+                return _this2.setState({ animate3: true });
+            }, 700);
+            setTimeout(function () {
+                return _this2.setState({ animate4: true });
+            }, 900);
+            setTimeout(function () {
+                return _this2.setState({ animate5: true });
+            }, 1100);
+            setTimeout(function () {
+                return _this2.setState({ animate6: true });
+            }, 1300);
+            setTimeout(function () {
+                document.getElementById('landing-arrow').style.opacity = '1';
+            }, 1500);
+            document.getElementById('landing-arrow-cont').addEventListener('click', function () {
+                document.getElementById('bio').scrollIntoView({ behavior: "smooth", block: "start" });
+            });
+        }
+    }, {
         key: 'render',
         value: function render() {
-            return _react2.default.createElement(Cover, null);
+            return _react2.default.createElement(
+                Cover,
+                null,
+                _react2.default.createElement(
+                    ColumnFit,
+                    null,
+                    _react2.default.createElement(
+                        'div',
+                        { style: { display: 'flex' } },
+                        _react2.default.createElement(Circle, { style: this.state.animate ? { background: '#673AB7', marginTop: '-30px' } : { marginTop: '-30px' } }),
+                        _react2.default.createElement(Circle, { style: this.state.animate1 ? { background: '#3F51B5', marginLeft: '40px', marginRight: '40px' } : { marginLeft: '40px', marginRight: '40px' } }),
+                        _react2.default.createElement(Circle, { style: this.state.animate2 ? { background: '#2196F3' } : {} })
+                    ),
+                    _react2.default.createElement(
+                        CoverHeader,
+                        { style: this.state.animate6 ? { opacity: 1 } : {} },
+                        'Eli Badgio'
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { style: { display: 'flex' } },
+                        _react2.default.createElement(Circle, { style: this.state.animate3 ? { background: '#FFC107' } : {} }),
+                        _react2.default.createElement(Circle, { style: this.state.animate4 ? { background: '#FF9800', marginLeft: '40px', marginRight: '40px' } : { marginLeft: '40px', marginRight: '40px' } }),
+                        _react2.default.createElement(Circle, { style: this.state.animate5 ? { background: '#FF5722', marginTop: '40px' } : { marginTop: '40px' } })
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { id: 'landing-arrow-cont' },
+                        _react2.default.createElement('i', { id: 'landing-arrow', 'data-feather': 'arrow-down' })
+                    )
+                )
+            );
         }
     }]);
 
     return Landing;
 }(_react2.default.Component);
 
-var Cover = (0, _reactEmotion2.default)(_elements.Frame)(_templateObject);
+var Cover = (0, _reactEmotion2.default)(_elements.Frame)(_templateObject2);
+
+var Circle = (0, _reactEmotion2.default)('div')(_templateObject3);
+
+var CoverHeader = (0, _reactEmotion2.default)('h1')(_templateObject4);
 
 exports.default = Landing;
 
@@ -1704,7 +1784,7 @@ var ProjectCard = function ProjectCard(_ref) {
         ),
         _react2.default.createElement(
             _elements.Text,
-            { style: { minHeight: '140px' } },
+            { style: { minHeight: '155px' } },
             description
         ),
         _react2.default.createElement(
@@ -2028,7 +2108,6 @@ var App = function (_React$Component) {
             return _react2.default.createElement(
                 _elements.ColumnCenter,
                 null,
-                _react2.default.createElement(_Navbar2.default, null),
                 _react2.default.createElement(_Landing2.default, null),
                 _react2.default.createElement(_Bio2.default, null),
                 _react2.default.createElement(_Design2.default, null),

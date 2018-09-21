@@ -23,6 +23,21 @@
     border-radius: 6px;
 }
 
+#landing-arrow-cont {
+    position: absolute;
+    top: calc(100vh - 100px);
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+#landing-arrow {
+    opacity: 0;
+    transition: opacity .35s ease;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+
 @media only screen and (max-width: 520px) {
     #bio-info {
         flex-direction: column !important;

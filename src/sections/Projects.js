@@ -137,7 +137,7 @@ const ProjectCard = ({title, description, link, tags}) => {
     return (
         <Wrapper>
             <SubTitle>{title}</SubTitle>
-            <Text style={{minHeight: '140px'}}>{description}</Text>
+            <Text style={{minHeight: '155px'}}>{description}</Text>
             <RowBetween style={{height: '42px'}}>
                 {link ?
                 <a href={link} target="_blank">
