@@ -35,7 +35,7 @@ class Design extends React.Component {
                           basicUrl={'STACKHACKTUTORING.COM'}/>
                     <WebCard title={'WALNUT'}
                           snapshot={'assets/walnut.png'}
-                          description={'Walnut is social media web app that I and my team worked on for many months. We wanted to create a' +
+                          description={'Walnut is a social media web app that I and my team worked on for many months. We wanted to create a' +
                           ' site focused on building community engagement. Our ui was heavily influenced by Google Material ui principles.'}
                           url={'https://www.walnutnetwork.com'}
                           basicUrl={'WALNUTNETWORK.COM'}/>
