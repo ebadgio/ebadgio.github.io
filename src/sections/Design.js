@@ -22,19 +22,19 @@ class Design extends React.Component {
                 {/*</SubHeader>*/}
                 <RowCenter>
                     <WebCard title={'MIRANDA MORRIS ART'}
-                          snapshot={'/ebadgio.github.io/assets/mm-art.jpg'}
+                          snapshot={'assets/mm-art.jpg'}
                           description={'I was hired by Miranda to develop a portfolio website to display her beautiful artwork.' +
                           ' I wanted viewers of her site to feel like they were at a real art gallery, so I focused on creating a flat ui, with pale grey shades/accents.'}
                           url={'https://www.mirandamorrisart.com'}
                           basicUrl={'MIRANDAMORRISART.COM'}/>
                     <WebCard title={'STACK HACK TUTORING'}
-                          snapshot={'/ebadgio.github.io/assets/sh-landing.png'}
+                          snapshot={'assets/sh-landing.png'}
                           description={'Stack Hack Tutoring is a one on one summer programming course that I founded in summer of 2018.' +
                           ' When developing the website, I wanted to create a startupy/modern feel, so that site viewers would already feel like they are a part of tech.'}
                           url={'https://www.stackhacktutoring.com'}
                           basicUrl={'STACKHACKTUTORING.COM'}/>
                     <WebCard title={'WALNUT'}
-                          snapshot={'/ebadgio.github.io/assets/walnut.png'}
+                          snapshot={'assets/walnut.png'}
                           description={'Walnut is social media web app that I and my team worked on for many months. We wanted to create a' +
                           ' site focused on building community engagement. Our ui was heavily influenced by Google Material ui principles.'}
                           url={'https://www.walnutnetwork.com'}

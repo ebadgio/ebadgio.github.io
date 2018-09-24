@@ -8,6 +8,7 @@ const DarkSection = styled(Section)`
     background: #424242;
     margin-bottom: 0;
     align-items: center;
+    max-width: none;
 `;
 
 const Bottom = () => {
