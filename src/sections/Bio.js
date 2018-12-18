@@ -16,7 +16,7 @@ class Bio extends React.Component {
                 <RowApart id="bio-info">
                     <Avatar src="assets/eli-2-web.jpg" id="avatar"/>
                     <Column id="links">
-                        <a href="assets/BadgioE_Resume10-18.pdf" target="_blank">
+                        <a href="assets/BadgioE_Resume11-18.pdf" target="_blank">
                             <ButtonOutlinePrimary>
                                 <i data-feather="download" className="mr-10" style={{height: '16px', width: '16px'}}/>
                                 Resume
